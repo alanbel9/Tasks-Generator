@@ -1,0 +1,25 @@
+#todo-list {
+    list-style: none;
+    li {
+        display: flex;
+        margin: 10px 0;
+        .checkbox-container {
+            width: 10%;
+            .checkbox {
+                width: 35px;
+                height: 35px;
+            }
+        }
+        .inputs-container {
+            width: 90%;
+        }
+        .icon-close-container {
+            cursor: pointer;
+            height: 35px;
+        }
+
+        &:hover {
+            background-color: beige;
+        }
+    }
+}
