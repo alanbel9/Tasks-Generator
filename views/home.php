@@ -14,7 +14,7 @@
         <div class="tasks-container">
             <div class="list-wrapper">
                 <ul id="todo-list" class="d-flex flex-column-reverse">
-                    <li class="ui-state-default">
+                  <!--  <li class="ui-state-default">
                         <div class="checkbox-container">
                             <input class="checkbox" type="checkbox" />
                         </div>
@@ -26,6 +26,7 @@
                             <i class="material-icons close-icon" style="font-size:30px;">close</i>
                         </div>
                      </li>
+                -->
                 </ul>
             </div>
         </div>
