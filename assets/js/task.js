@@ -15,6 +15,14 @@ BEL.task = {
             console.log('Task removed from list.');
         });
 
+         /** CLICK ON TASK CHECKBOXES */
+         jQuery(document).on('click', '#todo-list .checkbox-container input', function(event){
+            var item = jQuery(this.closest('li')).find('.inputs-container')[0];
+            if (item) {
+                jQuery(item).toggleClass('checked');
+            }
+        });
+
         jQuery(this.todo_list_id).sortable();
         jQuery(this.todo_list_id).disableSelection();
     },

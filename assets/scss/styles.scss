@@ -8,10 +8,17 @@
             .checkbox {
                 width: 35px;
                 height: 35px;
+                &:checked {
+                    background: #405189;
+                    border-width: 0;
+                }
             }
         }
         .inputs-container {
             width: 90%;
+            &.checked {
+                text-decoration: line-through;
+            }
         }
         .icon-close-container {
             cursor: pointer;
