@@ -1,9 +1,17 @@
+#new-task {
+  border-radius: unset;
+}
+
 #todo-list {
   list-style: none;
+  padding: unset;
 
   li {
     display: flex;
-    margin: 10px 0;
+    margin: 5px 10px;
+    background: cadetblue;
+    padding: 5px;
+    border-radius: 10px;
 
     .checkbox-container {
       width: 10%;
@@ -77,15 +85,23 @@
         border-radius: 10px;
       }
     }
-
-    &:hover {
-      background-color: beige;
-    }
   }
 }
 
+.buttons-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.tasks-container {
+  position: relative;
+  top: 45px;
+}
+
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   padding: 5px;
