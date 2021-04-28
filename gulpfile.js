@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+// var autoprefixer = require('gulp-autoprefixer');
 var notify = require("gulp-notify");
 
 //Notify css error
@@ -15,17 +15,14 @@ function errorAlertPost(error) {
 }
 
 gulp.task("sass", () =>
-  gulp.src("./assets/scss/**/*.scss")
-      .on("error", errorAlertPost)
-      .pipe(sass({
-          outputStyle: 'compressed'
-      }))
-      .pipe(gulp.dest("./assets/css/"))
+    gulp.src("./assets/scss/**/*.scss")
+        .on("error", errorAlertPost)
+        .pipe(sass({
+            outputStyle: 'compressed'
+        }))
+        .pipe(gulp.dest("./assets/css/"))
 );
 
-
-function watchFiles() {
-    return gulp.watch(['./assets/scss/**/*.scss'], gulp.series('sass'));
-};
-
-gulp.task('watch', gulp.series(watchFiles));
+gulp.task("watch", ["sass"], function() {
+    gulp.watch(['./assets/scss/**/*.scss'], ['sass']);
+});
