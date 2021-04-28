@@ -32,11 +32,22 @@
             </div>
         </div>
     </main>
-
+    <footer>
+        <div class="text-center p-1 row">
+            <div class="col-4 priority-item">
+                <div class="square color-beige"></div> BAJA
+            </div>
+            <div class="col-4 priority-item">
+                <div class="square color-yellow"></div> MEDIA
+            </div>
+            <div class="col-4 priority-item">
+                <div class="square color-red"></div> ALTA
+            </div>
+        </div>
+    </footer>
     <script>
         if (typeof BEL == 'object') {
             BEL.task.init();
         }
     </script>
-
 <?php require_once("html/base_bottom.php"); ?>
