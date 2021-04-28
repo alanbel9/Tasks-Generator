@@ -1,41 +1,42 @@
 <?php require_once("html/base_top.php"); ?>
 
-  <!-- TASK JAVASCRIPT -->
-  <script type="text/javascript" src="../assets/js/task.js"></script>
+    <!-- TASK JAVASCRIPT -->
+    <script type="text/javascript" src="../assets/js/task.js"></script>
 
     <main role="main" class="inner cover">
         <div class="buttons-container">
-            <button type="button" 
+            <button type="button"
                     class="btn btn-primary btn-lg btn-block"
                     onclick="BEL.task.addTask()">
-                    Nueva tarea
+                Nueva tarea
             </button>
         </div>
         <div class="tasks-container">
             <div class="list-wrapper">
                 <ul id="todo-list" class="d-flex flex-column-reverse">
-                  <!--  <li class="ui-state-default">
-                        <div class="checkbox-container">
-                            <input class="checkbox" type="checkbox" />
+                 <!--   <li class="row">
+                        <div class="col-2 checkbox-container">
+                            <input class="checkbox tick" type="checkbox"/>
+                            <input class="checkbox priority low" type="checkbox" data-priority="0"/>
                         </div>
-                        <div class="inputs-container">
+                        <div class="col-8 inputs-container">
                             <input class="form-control" type="text" placeholder="Introduzca nombre de la tarea"/>
-                            <textarea class="form-control" rows="3"  placeholder="Introduzca descripción"></textarea>
+                            <textarea class="form-control" rows="3" placeholder="Introduzca descripción"></textarea>
                         </div>
-                        <div class="icon-close-container">
+                        <div class="col-2 icon-close-container">
                             <i class="material-icons close-icon" style="font-size:30px;">close</i>
                         </div>
-                     </li>
-                -->
+                    </li>
+                    -->
                 </ul>
             </div>
         </div>
     </main>
 
     <script>
-    if (typeof BEL == 'object') {
-        BEL.task.init();
-    }
+        if (typeof BEL == 'object') {
+            BEL.task.init();
+        }
     </script>
 
 <?php require_once("html/base_bottom.php"); ?>
