@@ -14,19 +14,20 @@
         <div class="tasks-container">
             <div class="list-wrapper">
                 <ul id="todo-list" class="d-flex flex-column-reverse">
-                  <!--  <li class="ui-state-default">
-                        <div class="checkbox-container">
-                            <input class="checkbox" type="checkbox" />
+                    <li class="row">
+                        <div class="col-2 checkbox-container">
+                            <input class="checkbox tick" type="checkbox" />
+                            <input class="checkbox priority low" type="checkbox" data-priority="0"/>
                         </div>
-                        <div class="inputs-container">
+                        <div class="col-8 inputs-container">
                             <input class="form-control" type="text" placeholder="Introduzca nombre de la tarea"/>
                             <textarea class="form-control" rows="3"  placeholder="Introduzca descripción"></textarea>
                         </div>
-                        <div class="icon-close-container">
+                        <div class="col-2 icon-close-container">
                             <i class="material-icons close-icon" style="font-size:30px;">close</i>
                         </div>
                      </li>
-                -->
+                
                 </ul>
             </div>
         </div>

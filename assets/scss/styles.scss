@@ -1,13 +1,18 @@
 #todo-list {
     list-style: none;
+    padding: unset;
+    width: 100%;
+
     li {
         display: flex;
         margin: 10px 0;
+        border-radius: 10px;
         .checkbox-container {
             width: 10%;
             .checkbox {
                 width: 35px;
                 height: 35px;
+                margin-bottom: 5px;
                 &:checked {
                     background: #405189;
                     border-width: 0;
@@ -15,7 +20,6 @@
             }
         }
         .inputs-container {
-            width: 90%;
             &.checked {
                 text-decoration: line-through;
             }
