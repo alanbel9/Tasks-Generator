@@ -1,0 +1,25 @@
+{
+  "name": "task-generator",
+  "version": "1.0.0",
+  "description": "Online tasks generator",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanbel9/Tasks-Generator.git"
+  },
+  "keywords": [],
+  "author": "Alan Bel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanbel9/Tasks-Generator/issues"
+  },
+  "homepage": "https://github.com/alanbel9/Tasks-Generator#readme"
+}
