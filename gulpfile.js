@@ -1,28 +1,27 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-// var autoprefixer = require('gulp-autoprefixer');
-var notify = require("gulp-notify");
+var cleanCss = require('gulp-clean-css');
+var rename = require('gulp-rename');
 
-//Notify css error
-function errorAlertPost(error) {
-    notify.onError({
-        title: "SCSS",
-        subtitle: "Algo esta mal en tu CSS!",
-        sound: "Basso"
-    })(error);
-    console.log(error.toString());
-    this.emit("end");
-}
+var paths = {
+  sass: ['./assets/scss/styles.scss']
+};
 
-gulp.task("sass", () =>
-    gulp.src("./assets/scss/**/*.scss")
-        .on("error", errorAlertPost)
-        .pipe(sass({
-            outputStyle: 'compressed'
-        }))
-        .pipe(gulp.dest("./assets/css/"))
-);
-
-gulp.task("watch", ["sass"], function() {
-    gulp.watch(['./assets/scss/**/*.scss'], ['sass']);
+gulp.task('sass', function(done) {
+  gulp.src(paths.sass)
+    .pipe(sass())
+    .on('error', sass.logError)
+    .pipe(gulp.dest('./assets/css/'))
+    .pipe(cleanCss({
+      keepSpecialComments: 0
+    }))
+    .pipe(rename({extname: '.min.css'}))
+    .pipe(gulp.dest('./assets/css/'))
+    .on('end', done);
 });
+
+gulp.task('watch', function () {
+  gulp.watch(paths.sass, gulp.series('sass'));
+});
+
+gulp.task('default', gulp.series('watch'));
