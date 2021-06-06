@@ -1,0 +1,41 @@
+#todo-list {
+    list-style: none;
+    padding: unset;
+    width: 100%;
+
+    li {
+        display: flex;
+        margin: 10px 0;
+        border-radius: 10px;
+        .checkbox-container {
+            width: 10%;
+            .checkbox {
+                width: 35px;
+                height: 35px;
+                margin-bottom: 5px;
+                &:checked {
+                    background: #405189;
+                    border-width: 0;
+                }
+            }
+        }
+        .inputs-container {
+            &.checked {
+                text-decoration: line-through;
+            }
+        }
+        .icon-close-container {
+            cursor: pointer;
+            height: 30px;
+            &:hover {
+                background-color:black;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+
+        &:hover {
+            background-color: beige;
+        }
+    }
+}
