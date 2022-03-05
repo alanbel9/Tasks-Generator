@@ -23,5 +23,3 @@ gulp.task('sass', function(done) {
 gulp.task('watch', function () {
   gulp.watch(paths.sass, gulp.series('sass'));
 });
-
-gulp.task('default', gulp.series('watch'));

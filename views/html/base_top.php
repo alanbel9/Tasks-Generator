@@ -7,7 +7,7 @@
     <link rel="icon" href="../../assets/images/abel.ico">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../../assets/css/styles.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- Bootstrap CSS -->
