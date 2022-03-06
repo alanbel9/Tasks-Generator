@@ -2,10 +2,10 @@
 <footer>
     <div class="text-center row">
         <div class="col-4 priority-item">
-            <div class="square color-beige"></div> BAJA
+            <div class="square color-yellow"></div> BAJA
         </div>
         <div class="col-4 priority-item">
-            <div class="square color-yellow"></div> MEDIA
+            <div class="square color-orange"></div> MEDIA
         </div>
         <div class="col-4 priority-item">
             <div class="square color-red"></div> ALTA

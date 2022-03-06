@@ -4,7 +4,9 @@
   width: 100%; }
   #todo-list li {
     display: flex;
-    margin: 10px 0;
+    margin: 5px 10px;
+    background: cadetblue;
+    padding: 5px;
     border-radius: 10px; }
     #todo-list li .checkbox-container {
       width: 10%; }
@@ -15,6 +17,22 @@
         #todo-list li .checkbox-container .checkbox:checked {
           background: #405189;
           border-width: 0; }
+        #todo-list li .checkbox-container .checkbox.priority {
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeSpeed;
+          width: 35px;
+          height: 35px;
+          margin: 0;
+          display: block;
+          float: left;
+          position: relative;
+          cursor: pointer; }
+        #todo-list li .checkbox-container .checkbox.medium::after {
+          background-color: orange; }
+        #todo-list li .checkbox-container .checkbox.high::after {
+          background-color: red; }
+        #todo-list li .checkbox-container .checkbox.low::after {
+          background-color: yellow; }
     #todo-list li .inputs-container.checked {
       text-decoration: line-through; }
     #todo-list li .icon-close-container {
@@ -26,3 +44,19 @@
         border-radius: 10px; }
     #todo-list li:hover {
       background-color: rgba(245, 245, 220, 0.863); }
+
+footer .priority-item {
+  display: flex; }
+  footer .priority-item .square {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; }
+
+.color-yellow {
+  background-color: yellow; }
+
+.color-orange {
+  background-color: orange; }
+
+.color-red {
+  background-color: red; }

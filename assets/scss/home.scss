@@ -5,7 +5,9 @@
 
     li {
         display: flex;
-        margin: 10px 0;
+        margin: 5px 10px;
+        background: cadetblue;
+        padding: 5px;
         border-radius: 10px;
         .checkbox-container {
             width: 10%;
@@ -16,6 +18,26 @@
                 &:checked {
                     background: #405189;
                     border-width: 0;
+                }
+                &.priority {
+                    -webkit-font-smoothing: antialiased;
+                    text-rendering: optimizeSpeed;
+                    width: 35px;
+                    height: 35px;
+                    margin: 0;
+                    display: block;
+                    float: left;
+                    position: relative;
+                    cursor: pointer;
+                }
+                &.medium::after {
+                    background-color: orange;
+                }
+                &.high::after {
+                    background-color: red;
+                }
+                &.low::after {
+                    background-color: yellow;
                 }
             }
         }
@@ -39,3 +61,12 @@
         }
     }
 }
+
+footer .priority-item {
+    display: flex;
+    .square {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+} 
