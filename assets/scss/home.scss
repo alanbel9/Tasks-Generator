@@ -49,24 +49,33 @@
         .icon-close-container {
             cursor: pointer;
             height: 30px;
-            &:hover {
+            .close-icon:hover {
                 background-color:black;
                 color: white;
                 border-radius: 10px;
             }
         }
-
-        &:hover {
-            background-color: rgba(245, 245, 220, 0.863);
-        }
     }
 }
 
-footer .priority-item {
-    display: flex;
-    .square {
-        width: 20px;
-        height: 20px;
-        margin-right: 10px;
-    }
-} 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 10px;
+    z-index: 10;
+    .priority-item {
+        display: flex;
+        .square {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    } 
+}
+
+#new-task {
+    border-radius: unset;
+}

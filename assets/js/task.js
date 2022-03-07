@@ -72,11 +72,11 @@ BEL.task = {
                     '<input class="checkbox tick" type="checkbox" />' + 
                     '<input class="checkbox priority low" type="checkbox" data-priority="0">' +
                 '</div>' + 
-                '<div class="inputs-container">' + 
-                    '<input class="form-control" type="text" placeholder="Introduzca nombre de la tarea"/>' + 
-                    '<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Introduzca descripción"></textarea>' + 
+                '<div class="col-8 inputs-container">' + 
+                    '<input class="form-control" type="text" placeholder="Nombre de la tarea"/>' + 
+                    '<textarea class="form-control" rows="3"  placeholder="Descripción"></textarea>' + 
                 '</div>' + 
-                '<div class="icon-close-container">' + 
+                '<div class="col-2 icon-close-container">' + 
                     '<i class="material-icons close-icon" style="font-size:30px;">close</i>' + 
                 '</div>' + 
             '</li>'
